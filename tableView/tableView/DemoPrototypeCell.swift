@@ -9,10 +9,11 @@
 import UIKit
 
 class DemoPrototypeCell: UITableViewCell {
-
-
-    @IBOutlet weak var imageLabel: UIImageView!
-    @IBOutlet weak var cityLabel: UILabel!
+ 
+    @IBOutlet weak var imageField: UIImageView!
+    
+    @IBOutlet weak var nameField: UILabel!
+    @IBOutlet weak var priceField: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
