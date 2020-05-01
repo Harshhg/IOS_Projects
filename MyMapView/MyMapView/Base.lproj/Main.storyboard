@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XTH-OH-8ku">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="E2g-aB-ceE">
+            <objects>
+                <viewController id="XTH-OH-8ku" customClass="ViewController" customModule="MyMapView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TzB-dj-oQU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-jm-YDM">
+                                <rect key="frame" x="2" y="22" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jRO-jm-YDM" firstAttribute="trailing" secondItem="M7l-qQ-PIP" secondAttribute="trailing" constant="2" id="CvW-0E-SDR"/>
+                            <constraint firstItem="jRO-jm-YDM" firstAttribute="bottom" secondItem="M7l-qQ-PIP" secondAttribute="bottom" constant="2" id="HtH-Zt-fJr"/>
+                            <constraint firstItem="jRO-jm-YDM" firstAttribute="top" secondItem="M7l-qQ-PIP" secondAttribute="top" constant="2" id="NGN-IK-ikM"/>
+                            <constraint firstItem="jRO-jm-YDM" firstAttribute="leading" secondItem="TzB-dj-oQU" secondAttribute="leading" constant="2" id="uOd-ZX-aCL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M7l-qQ-PIP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pRO-sk-tTZ"/>
+                    <connections>
+                        <outlet property="mapView" destination="jRO-jm-YDM" id="2L6-vh-hl5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evr-a0-k6c" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645.60000000000002" y="270.31484257871068"/>
+        </scene>
+    </scenes>
+</document>

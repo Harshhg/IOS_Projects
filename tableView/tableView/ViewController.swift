@@ -41,8 +41,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc?.price = price[indexPath .row]
         self.navigationController?.pushViewController(vc!, animated: true)
     }
-
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()

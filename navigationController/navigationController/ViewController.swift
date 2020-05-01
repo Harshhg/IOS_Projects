@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     var userName: String?
     var passWord: String?
     override func viewDidLoad() {
-                                                                                                                                                                                                                                                                          super.viewDidLoad()
+
+         super.viewDidLoad()
         welcomeField.text = "Welcome \(userName!)"
         print(userName)
         print(passWord)
@@ -23,4 +24,5 @@ class ViewController: UIViewController {
 
 
 }
+
 
